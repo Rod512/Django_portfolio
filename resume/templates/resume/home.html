@@ -1,50 +1,30 @@
-<!doctype html>
+{% extends 'resume/base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
-    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
-    <!-- BOOTSTRAP CSS  ) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="{% static 'resume/css/home.css' %}">
-    <title>Home</title>
-</head>
-<body>
-    <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-sm-2">
-                <div class="border-right border-warning h-100">
-                    <div class="text-center">
-                        <img src="{% static 'resume/images/rd.jpg'%}" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
-                        <h3 class="text-white mt-3">Rudro Dhar</h3>
-                    </div>
-                    <hr class="border-light">
-                    <nav class="nav flex-column text-center">
-                        <a href="" class="nav-link">Home</a>
-                        <a href="" class="nav-link">Services</a>
-                        <a href="" class="nav-link">Skill</a>
-                        <a href="" class="nav-link">Contact</a>
-                    </nav>
-                </div>
-
+{% block content %}
+        <div class="text-white mt-5">
+            <div class="text-center">
+                 <img src="{% static 'resume/images/rd.jpg' %}" class="img-thumbnail" width="250px" height="150px">
             </div>
-            <div class="col-sm-10">
-                main content
+
+            <div class="mt-5 text-white mx-5 text-justify">
+                <h1 class="font-weight-bold st">Hello,</h1>
+                <div class="px-4" style="line-height: 2rem">
+                    <p class="text-indent:100px">
+                        I am <b class="text-warning">Rudro Dhar</b> with a Diploma degree in Computer Engineering and 4 years
+                        of Perseverance, and I am successfully completed my internship under OS IT Solutions LTD, I possess a
+                        deep understanding of web development methodologies and programming languages. In addition to
+                        technical skills, I am a strong communicator and collaborator who thrives in fast-paced environments.
+                        I enjoy working with people from diverse backgrounds and leveraging their unique perspectives to drive
+                        innovation and achieve common goals.Now I am working with my new startup <b class="text-warning">DOZE IT.</b> Overall,
+                        I am committed to staying up-to-date with the latest advancements in my field and applying that
+                        knowledge to deliver high-quality solutions that meet and exceed customer expectations.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+                <a href="" class="btn btn-outline-info my-3">Contact</a>
             </div>
         </div>
-    </div>
 
-
-
-<!-- Add Bootstrap JavaScript (jQuery and Popper.js are required dependencies) -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js" integrity="sha384-MCw98/SFnGE8fJT3KOqjHJ+9LXsz/EP6b8tn7E179aKLyTnJWWVC8iWUE76DlA2" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-</html>
+{% endblock content %}
