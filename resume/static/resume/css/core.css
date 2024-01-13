@@ -12,3 +12,14 @@ body{
     min-height: 100%;
 
 }
+
+
+/*Icon color*/
+.i-color{
+    color: chartreuse;
+}
+
+/*service Subtitle colour*/
+.ss-color{
+    color: silver;
+}
