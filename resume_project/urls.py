@@ -21,5 +21,7 @@ from resume import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('resume/', include('service.urls'))
+    path('resume/', include('service.urls')),
+    path('resume/', include('edu.urls'))
+
 ]
