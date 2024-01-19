@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
 def skill(request):
-    return render(request, 'edu/skill.html')
+    context = {"skill": "active"}
+    return render(request, 'edu/skill.html',context)

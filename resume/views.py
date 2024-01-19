@@ -1,4 +1,10 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'resume/home.html')
+    context = {"home" : "active"}
+
+    return render(request, 'resume/home.html', context)
+
+def contact(request):
+    context = {"contact": "active"}
+    return render(request, 'resume/contact.html',context)
